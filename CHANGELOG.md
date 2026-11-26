@@ -6,6 +6,7 @@
 
 * **hook_mail:** call `params[0].address` as a property instead of a method
 * **hook_data_post:** guard against missing `txn.notes.mailauth` when `hook_mail` was not called
+* **deps:** bump mailauth from 4.7.2 to 8.1.0, whose nodemailer no longer takes quadratic time on crafted From headers (GHSA-2x7j-588g-ccc2, GHSA-v53p-9fqp-m79j); it needs Node.js 20.18.1 or later, and its DMARC verdicts follow RFC 9989
 
 ## [1.2.0](https://github.com/haraka/haraka-plugin-mailauth/compare/v1.1.1...v1.2.0) (2024-10-02)
 
